@@ -23,5 +23,7 @@ namespace MySiteAspNetCoreMvc
                     webBuilder.UseStartup<Startup>();
                 });
 
+
+
     }
 }
