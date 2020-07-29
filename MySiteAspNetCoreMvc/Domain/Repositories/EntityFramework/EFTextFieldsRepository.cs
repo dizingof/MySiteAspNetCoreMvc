@@ -41,13 +41,6 @@ namespace MySiteAspNetCoreMvc.Domain.Repositories.EntityFramework
         {
             context.TextFields.Remove(new TextField(){Id = id});
         }
-
         
-
-       
-
-       
-
-      
     }
 }
