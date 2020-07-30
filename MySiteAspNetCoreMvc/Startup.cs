@@ -66,7 +66,10 @@ namespace MySiteAspNetCoreMvc
             });
 
             //добавляем сервисы для контроллеров и представлений (MVC)
-            services.AddControllersWithViews()
+            services.AddControllersWithViews(x =>
+                {
+                    x.Conventions.Add(new AdminAreaAuthorization("Admin", "AdminArea"));
+                })
                 //выставляем совместимость с asp.net core 3.0
                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
 
