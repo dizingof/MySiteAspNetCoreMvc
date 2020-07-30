@@ -12,7 +12,7 @@ namespace MySiteAspNetCoreMvc.Domain.Repositories.EntityFramework
     {
         private readonly AppDbContext context;
 
-        private EFTextFieldsRepository(AppDbContext context)
+        public EFTextFieldsRepository(AppDbContext context)
         {
             this.context = context;
         }
