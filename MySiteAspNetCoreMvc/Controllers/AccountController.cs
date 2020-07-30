@@ -11,12 +11,12 @@ using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
 namespace MySiteAspNetCoreMvc.Controllers
 {
     [Authorize]
-    public class AccountController1 : Controller
+    public class AccountController : Controller
     {
         private readonly UserManager<IdentityUser> userManager;
         private readonly SignInManager<IdentityUser> signInManager;
 
-        public AccountController1(UserManager<IdentityUser> userMgr, SignInManager<IdentityUser> signinMgr)
+        public AccountController(UserManager<IdentityUser> userMgr, SignInManager<IdentityUser> signinMgr)
         {
             userManager = userMgr;
             signInManager = signinMgr;
